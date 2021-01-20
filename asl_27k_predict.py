@@ -10,8 +10,9 @@ import matplotlib.image as mpimg
 def show_image(image_path):
     image = mpimg.imread(image_path)
     plt.imshow(image)
+    plt.show()
 
-show_image('asl_27k/b.png')
+#show_image('asl_27k/b.png')
 
 from tensorflow.keras.preprocessing import image as image_utils
 
@@ -25,7 +26,6 @@ for i in range(26):
     dictionary[i] = alphabet[i]
 
 def predict_letter(file_path):
-    show_image(file_path)
     image = load_and_scale_image(file_path)
     image = image_utils.img_to_array(image)
     image = image.reshape(1,28,28,1) 
