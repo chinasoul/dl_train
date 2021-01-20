@@ -38,3 +38,9 @@ def predict_letter(file_path):
 
 predict_letter("asl_27k/a.png")
 predict_letter("asl_27k/b.png")
+# below 4 pics are from elsewhere(not provided by the deep learning course)
+# so I guess the results are not expected since train set is small
+predict_letter("asl_27k/A1016.jpg")
+predict_letter("asl_27k/A1049.jpg")
+predict_letter("asl_27k/B1012.jpg")
+predict_letter("asl_27k/B1159.jpg")

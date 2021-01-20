@@ -1,16 +1,9 @@
-# dl_train
 marvelz@debian:~/Desktop/dl_train$ export LD_LIBRARY_PATH=/usr/local/cuda-11.2/lib64
 marvelz@debian:~/Desktop/dl_train$ python3 asl_27k.py 
-...
-2021-01-20 01:15:12.401913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
-pciBusID: 0000:02:00.0 name: Quadro P2000 computeCapability: 6.1
-coreClock: 1.4805GHz coreCount: 8 deviceMemorySize: 4.94GiB deviceMemoryBandwidth: 130.53GiB/s
-...
 (27455, 784)
 (27455,)
 (27455, 28, 28, 1)
 (27455,)
-...
 Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -47,7 +40,6 @@ Total params: 265,075
 Trainable params: 264,775
 Non-trainable params: 300
 _________________________________________________________________
-...
 858/858 [==============================] - 14s 13ms/step - loss: 0.8344 - accuracy: 0.7572 - val_loss: 0.1534 - val_accuracy: 0.9467
 Epoch 2/10
 858/858 [==============================] - 7s 9ms/step - loss: 0.0244 - accuracy: 0.9920 - val_loss: 0.5122 - val_accuracy: 0.8857
@@ -67,9 +59,11 @@ Epoch 9/10
 858/858 [==============================] - 7s 9ms/step - loss: 0.0034 - accuracy: 0.9991 - val_loss: 0.3925 - val_accuracy: 0.9522
 Epoch 10/10
 858/858 [==============================] - 8s 9ms/step - loss: 0.0026 - accuracy: 0.9992 - val_loss: 0.2852 - val_accuracy: 0.9607
-2021-01-20 01:16:36.929668: W tensorflow/python/util/util.cc:348] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
-
 
 marvelz@debian:~/Desktop/dl_train$ python3 asl_27k_predict.py 
 a
 b
+x
+x
+c
+t
